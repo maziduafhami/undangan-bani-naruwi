@@ -550,6 +550,493 @@
 
 </body>
 </html>
+        }
+        .top-left { top: 20px; left: 20px; }
+        .top-right { top: 20px; right: 20px; transform: scaleX(-1); }
+        .bottom-left { bottom: 20px; left: 20px; transform: scaleY(-1); }
+        .bottom-right { bottom: 20px; right: 20px; transform: scale(-1); }
+
+        /* Pembatas Estetik */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            color: var(--gold-primary);
+            width: 80%;
+        }
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--gold-primary), transparent);
+        }
+        .divider-icon {
+            margin: 0 12px;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        /* Header */
+        .label-serat {
+            font-family: 'Cinzel', serif;
+            font-size: 11px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--gold-primary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+            letter-spacing: 2px;
+        }
+
+        h1 span {
+            color: var(--gold-primary);
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .sub-header {
+            font-size: 16px;
+            letter-spacing: 4px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        /* Kaligrafi Arab */
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            color: var(--text-muted);
+            line-height: 1.8;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.05);
+        }
+        .basmalah {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: var(--text-dark);
+        }
+        .hamdalah {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* Isi Serat / Teks Pembuka */
+        .serat-body {
+            font-size: 17.5px;
+            line-height: 1.8;
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .javanese-quote {
+            font-style: italic;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 500;
+            display: block;
+        }
+
+        /* Kotak Pranata Wektu (Detail Waktu & Tempat) */
+        .pranata-box {
+            background-color: #faf4e8;
+            border: 1px double var(--gold-primary);
+            border-radius: 16px;
+            padding: 24px 20px;
+            margin: 25px 0 15px 0;
+            text-align: left;
+            position: relative;
+        }
+
+        .pranata-title {
+            font-family: 'Cinzel', serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed rgba(212, 175, 55, 0.3);
+            padding-bottom: 8px;
+        }
+
+        .grid-detail {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 12px 16px;
+            font-size: 17px;
+        }
+
+        .grid-label {
+            font-weight: 600;
+            color: var(--text-muted);
+            min-width: 100px;
+        }
+
+        .grid-value {
+            color: var(--text-dark);
+        }
+
+        /* Komponen Countdown Timer */
+        .countdown-section {
+            margin: 20px 0 25px 0;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .countdown-item {
+            background: #faf4e8;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 12px;
+            min-width: 75px;
+            padding: 10px 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .countdown-number {
+            font-family: 'Cinzel', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+
+        .countdown-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--gold-primary);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        /* Kutipan Ayat */
+        .ayat-section {
+            margin: 25px 0;
+            padding: 15px;
+            border-left: 2px solid var(--gold-primary);
+            text-align: left;
+            background-color: rgba(212, 175, 55, 0.02);
+        }
+
+        .ayat-translation {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .ayat-reference {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--gold-primary);
+            margin-top: 6px;
+            display: block;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 1px;
+        }
+
+        /* Footer & Kontak */
+        .wasana-kata {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .closing-salutation {
+            font-family: 'Amiri', serif;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .btn-rsvp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--text-dark);
+            color: var(--paper-warm) !important;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-family: 'Cinzel', serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            border: 1px solid var(--gold-primary);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        .btn-rsvp:hover {
+            background-color: var(--gold-primary);
+            color: var(--text-dark) !important;
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-rsvp span {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        /* Tombol Musik Melayang */
+        .btn-music {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--text-dark);
+            border: 2px solid var(--gold-primary);
+            color: var(--gold-primary);
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .btn-music:hover {
+            transform: scale(1.1);
+            background-color: var(--gold-primary);
+            color: var(--text-dark);
+        }
+
+        /* Efek berputar saat musik jalan */
+        .spinning {
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .ulem-container {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            .grid-detail {
+                grid-template-columns: 1fr;
+                gap: 4px;
+            }
+            .grid-label {
+                font-size: 14px;
+                margin-top: 8px;
+            }
+            .grid-value {
+                font-size: 16px;
+            }
+            .basmalah {
+                font-size: 22px;
+            }
+            .countdown-item {
+                min-width: 60px;
+                padding: 8px 4px;
+            }
+            .countdown-number {
+                font-size: 20px;
+            }
+            .countdown-label {
+                font-size: 9px;
+            }
+            .btn-music {
+                bottom: 15px;
+                right: 15px;
+                width: 44px;
+                height: 44px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ulem-container">
+        <!-- Ornamen Klasik di Setiap Sudut -->
+        <div class="corner-ornament top-left">⚜</div>
+        <div class="corner-ornament top-right">⚜</div>
+        <div class="corner-ornament bottom-left">⚜</div>
+        <div class="corner-ornament bottom-right">⚜</div>
+
+        <!-- Bagian Kepala / Header -->
+        <div class="label-serat">Serat Ulem</div>
+        <h1>Bani <span>Naruwi</span></h1>
+        <div class="sub-header">Pertemuan Rukun Keluarga</div>
+
+        <div class="divider">
+            <span class="divider-icon">✦ ꦧꦤꦶꦤꦵꦫꦸꦮꦶ ✦</span>
+        </div>
+
+        <!-- Mukadimah & Bahasa Arab -->
+        <div class="arabic-text basmalah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+        <div class="arabic-text hamdalah">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</div>
+
+        <!-- Isi Serat -->
+        <div class="serat-body">
+            <span class="javanese-quote">"Membuka swasana kanthi donga, hamemuji dumateng Gusti Ingkang Maha Welas Asih."</span>
+            Segala puji bagi Allah SWT yang senantiasa melimpahkan berkah kasih sayang-Nya dan mengikat batin kita dalam tali keturunan yang luhur. Shalawat serta salam semoga senantiasa tercurah kepada junjungan kita Rasulullah SAW.
+            <br><br>
+            Kanthi umandhanging rasa syukur lan kairing sejaning manah ingkang tulus, kami sekeluarga besar <strong>Bani Naruwi</strong> bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri agenda silaturahmi berkala guna mempererat persaudaraan yang insya Allah akan diselenggarakan pada:
+        </div>
+
+        <!-- Kotak Pranata (Informasi Waktu & Tempat) -->
+        <div class="pranata-box">
+            <div class="pranata-title">Pranata Wektu & Papan</div>
+            <div class="grid-detail">
+                <div class="grid-label">📅 Dinten, Tanggal</div>
+                <div class="grid-value">Jumat, 17 Juli 2026</div>
+
+                <div class="grid-label">⏰ Wanci (Waktu)</div>
+                <div class="grid-value">16.00 WIB ngantos paripurna <span style="font-style: italic; font-size: 14px; color: var(--text-muted);">(Selesai)</span></div>
+
+                <div class="grid-label">🏠 Papan (Tempat)</div>
+                <div class="grid-value">
+                    <strong>Dalemipun (Kediaman) Bapak Makhrudi & Ibu Ribut Hariani</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian Hitungan Mundur (Countdown Timer) -->
+        <div class="countdown-section" id="timer-container">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Hari</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Jam</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Menit</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Detik</div>
+            </div>
+        </div>
+
+        <!-- Ayat Pilihan (QS. Al-Hujurat: 13) -->
+        <div class="ayat-section">
+            <div class="ayat-translation">
+                "Wahai manusia! Sungguh, Kami telah menciptakan kamu dari seorang laki-laki dan seorang perempuan, kemudian Kami jadikan kamu berbangsa-bangsa dan bersuku-suku agar kamu saling mengenal..."
+            </div>
+            <span class="ayat-reference">QS. Al-Hujurat: 13</span>
+        </div>
+
+        <!-- Wasana Kata / Penutup -->
+        <div class="wasana-kata">
+            Merupakan suatu kehormatan dan kebahagiaan yang mendalam bagi kami apabila Bapak/Ibu/Saudara/i berkenan meluangkan waktu untuk hadir merajut tali kasih ini. Semoga langkah kita diringi kemudahan dan rida dari-Nya.
+        </div>
+
+        <div class="arabic-text closing-salutation">
+            وَالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ
+            <br>
+            <small style="font-size: 15px; opacity: 0.85;">جَزَاكُمُ اللَّهُ خَيْرًا كَثِيرًا</small>
+        </div>
+
+        <!-- Tombol Interaktif WhatsApp RSVP -->
+        <a href="https://wa.me/6285177445749" class="btn-rsvp" target="_blank">
+            <span>📱</span> Konfirmasi Kehadiran
+        </a>
+    </div>
+
+    <!-- Elemen Audio Tersembunyi (Tambahkan atribut autoplay, muted, playsinline) -->
+    <audio id="bg-music" src="music.mp3" loop autoplay muted playsinline></audio>
+
+    <!-- Tombol Musik Melayang (Ikon default diganti jadi 🔇 karena awal mula senyap) -->
+    <button id="music-toggle" class="btn-music" onclick="toggleMusic()">
+        <span id="music-icon">🔇</span>
+    </button>
+
+    <!-- Skrip Hitungan Mundur Otomatis & Kontrol Audio -->
+    <script>
+        // Mengatur tanggal target waktu pertemuan keluarga (17 Juli 2026 16:00 WIB)
+        const targetDate = new Date("July 17, 2026 16:00:00").getTime();
+
+        const countdownInterval = setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            // Perhitungan waktu untuk hari, jam, menit, dan detik
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            // Memasukkan hasil kalkulasi ke dalam elemen HTML
+            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+
+            // Jika hitungan mundur selesai/lewat, ganti tampilan dengan teks pemberitahuan
+            if (difference < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("timer-container").innerHTML = 
+                    "<div style='font-family:Cinzel, serif; font-size: 16px; font-weight: 600; color: var(--gold-primary); letter-spacing: 2px;'>Acara Sampun Dipunwiwiti / Kaleksanan</div>";
+            }
+        }, 1000);
+
+        // --- Kontrol Audio Pintar ---
+        const audio = document.getElementById("bg-music");
+        const musicToggleBtn = document.getElementById("music-toggle");
+        const musicIcon = document.getElementById("music-icon");
+
+        function toggleMusic() {
+            if (audio.paused) {
+                audio.play().then(() => {
+                    musicIcon.innerText = "⏸️";
+                    musicToggleBtn.classList.add("spinning");
+                }).catch(err => {
+                    console.log("Autoplay ditolak oleh kebijakan browser:", err);
+                });
+            } else {
+                audio.pause();
+                musicIcon.innerText = "🎵";
+                musicToggleBtn.classList.remove("spinning");
+            }
+        }
+
+        // Taktik Autoplay Halus: Begitu user menyentuh/klik bagian mana saja di halaman pertama kali, musik langsung jalan!
+        document.addEventListener('click', function() {
+            if (audio.paused) {
+                toggleMusic();
+            }
+        }, { once: true });
+        
+        document.addEventListener('touchstart', function() {
+            if (audio.paused) {
+                toggleMusic();
+            }
+        }, { once: true });
+    </script>
+
+</body>
+</html>
             opacity: 0.6;
             user-select: none;
         }
